@@ -1,0 +1,32 @@
+{
+  "steps": [
+    {
+      "id": "cameras",
+      "step": 1,
+      "title": "Choose your cameras",
+      "icon": "camera",
+      "products": []
+    },
+    {
+      "id": "plan",
+      "step": 2,
+      "title": "Choose your plan",
+      "icon": "shield",
+      "products": []
+    },
+    {
+      "id": "sensors",
+      "step": 3,
+      "title": "Choose your sensors",
+      "icon": "sensor",
+      "products": []
+    },
+    {
+      "id": "protection",
+      "step": 4,
+      "title": "Add extra protection",
+      "icon": "lock",
+      "products": []
+    }
+  ]
+}
