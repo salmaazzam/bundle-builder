@@ -1,0 +1,60 @@
+.stepper {
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--color-card);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s;
+  user-select: none;
+}
+
+.btn:hover:not(:disabled) {
+  background: var(--color-bg);
+}
+
+.btn:disabled {
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+}
+
+.count {
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: center;
+  min-width: 20px;
+}
+
+/* sizes */
+.md .btn {
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+}
+.md .count {
+  font-size: 14px;
+  min-width: 24px;
+}
+
+.sm .btn {
+  width: 26px;
+  height: 26px;
+  font-size: 14px;
+}
+.sm .count {
+  font-size: 13px;
+  min-width: 20px;
+}

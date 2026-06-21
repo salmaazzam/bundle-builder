@@ -1,0 +1,146 @@
+.accordion {
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+
+.accordion.open {
+  background: #EDF4FF;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  border: none;
+  transition: background 0.15s;
+}
+
+
+.stepLabelRow {
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-border);
+  width: 100%;
+}
+
+.headerMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  gap: 12px;
+  width: 100%;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.selectedBadge {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+@media (min-width: 601px) {
+  .accordion:not(.open) .selectedBadge {
+    display: none;
+  }
+}
+
+.chevron {
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  padding: 4px 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.nextBtn {
+  align-self: stretch;
+  padding: 14px 24px;
+  color:var(--color-primary);
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background 0.15s;
+  text-align: center;
+  border: 1px solid var(--color-primary);
+}
+
+.nextBtn:hover {
+  background: var(--color-primary-hover);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .headerMain {
+    padding: 20px 15px;
+  }
+
+  .stepLabelRow {
+    padding: 8px 16px;
+  }
+
+  .content {
+    padding: 4px 16px 16px;
+  }
+}

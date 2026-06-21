@@ -1,0 +1,152 @@
+.card {
+  position: relative;
+  background: var(--color-card);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: var(--shadow-card);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.card.selected {
+  border-color: var(--color-primary);
+  border-width: 2px;
+  background: #FAFAFE;
+}
+
+.card.clickable {
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+  z-index: 1;
+}
+
+.imageWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+.description {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+.learnMore {
+  font-size: 12px;
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: underline;
+  align-self: flex-start;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.features li {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  padding-left: 14px;
+  position: relative;
+}
+
+.features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-savings);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+}
+
+.comparePrice {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+  line-height: 1.2;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-price);
+  line-height: 1.2;
+}
+
+.selectBtn {
+  flex: 1;
+}
+
+.selectedCheck {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.selectHint {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}

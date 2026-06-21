@@ -1,0 +1,26 @@
+.builder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobileTitle {
+  display: none;
+  font-size: 31px;
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+  padding: 8px 0;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .mobileTitle {
+    display: block;
+  }
+}
